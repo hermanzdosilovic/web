@@ -10,7 +10,6 @@ set :branch, 'master'
 set :user, 'pi'
 set :port, '22219'
 set :forward_agent, true     # SSH forward_agent.
-# set :ssh_options, '-A'
 
 set :shared_paths, ['config/database.yml', 'config/secrets.yml', 'log']
 

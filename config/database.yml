@@ -16,4 +16,5 @@ test:
 
 production:
   <<: *default
-  database: web_production
+  socket: /var/run/mysqld/mysqld.sock
+  database: web
