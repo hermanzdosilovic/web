@@ -3,8 +3,9 @@ require 'mina/rails'
 require 'mina/git'
 require 'mina/rbenv'
 
-set :domain, 'gitac.ddns.net'
-set :deploy_to, '/home/pi/www/web'
+set :domain, 'gitac.local'
+set :deploy_to, '/var/www/web'
+set :app_path, lambda { "#{deploy_to}/#{current_path}" }
 set :repository, 'git@github.com:hermanzdosilovic/web.git'
 set :branch, 'master'
 set :user, 'pi'

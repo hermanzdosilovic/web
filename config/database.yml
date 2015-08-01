@@ -17,4 +17,6 @@ test:
 production:
   <<: *default
   socket: /var/run/mysqld/mysqld.sock
+  username: pi
+  password:
   database: web
