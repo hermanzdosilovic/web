@@ -14,6 +14,8 @@ set :forward_agent, true
 
 set :shared_paths, ['log', 'public/system']
 
+set :app_path, lambda { "#{deploy_to}/#{current_path}" }
+
 task setup: :environment do
   queue! %[mkdir -p "#{deploy_to}/#{shared_path}/log"]
   queue! %[chmod g+rx,u+rwx "#{deploy_to}/#{shared_path}/log"]
