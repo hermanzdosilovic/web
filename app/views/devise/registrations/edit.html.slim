@@ -1,27 +1,16 @@
-.col-xs-6.col-sm-6.col-md-6.col-lg-6.well
-  h2 Edit #{resource_name.to_s.humanize}
-  = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
-    = devise_error_messages!
-    .form-group
-      = f.label :first_name
-      = f.text_field :first_name, class: 'form-control', placeholder: 'Change your first name'
-    .form-group
-      = f.label :last_name
-      = f.text_field :last_name, class: 'form-control', placeholder: 'Change your last name'
-    .form-group
-      = f.label :email
-      = f.email_field :email, autofocus: true, class: 'form-control'
-    .form-group
-      = f.label :password
-      = f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: "Leave blank if you don't want to change it"
-    .form-group
-      = f.label :password_confirmation
-      = f.password_field :password_confirmation, autocomplete: "off", class: 'form-control'
-    .form-group
-      = f.label :current_password
-      = f.password_field :current_password, autocomplete: "off", class: 'form-control', placeholder: 'We need your current password to confirm your changes'
-    .form-group
-      = f.submit 'Update', class: 'btn btn-success'
-      = link_to 'Cancel', root_path, class: 'btn btn-primary'
-      .pull-right
-        = link_to 'Delete my account', registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: 'btn btn-danger'
+.col-xs-8.col-sm-8.col-md-6.col-lg-6.col-xs-offset-2.col-sm-offset-2.col-md-offset-3.col-lg-offset-3
+  .login-panel.panel.panel-default.well
+    .panel-heading
+      h3 Edit #{resource_name.to_s.humanize}
+    .panel-body
+      = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+          = f.input :first_name, placeholder: resource.first_name, autofocus: true
+          = f.input :last_name, placeholder: resource.last_name
+          = f.input :email, placeholder: resource.email
+          = f.input :password, autocomplete: "off", placeholder: "Leave blank if you don't want to change it"
+          = f.input :password_confirmation, autocomplete: "off"
+          = f.input :current_password, label: "Current password (#{link_to('Forgot your password?', new_password_path)})".html_safe, placeholder: 'We need your current password to confirm your changes'
+          = f.submit 'Update', class: 'btn btn-primary'
+          = link_to 'Cancel', root_path, class: 'btn'
+          .pull-right
+            = link_to 'Delete my account', registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: 'btn btn-danger'

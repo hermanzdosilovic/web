@@ -4,7 +4,7 @@
       h3 Sign In
     .panel-body
       = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-        = f.input :email
+        = f.input :email, autofocus: true
         = f.input :password, label: "Password (#{link_to('Forgot your password?', new_user_password_path)})".html_safe
         - if devise_mapping.rememberable?
           = f.input :remember_me, as: :boolean
