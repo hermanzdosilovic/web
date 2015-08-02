@@ -3,11 +3,10 @@ class ApplicationController < ActionController::Base
 
   before_action :configure_permitted_parameters, if: :devise_controller?
 
-  protected
+  private
 
-    def configure_permitted_parameters
-      devise_parameter_sanitizer.for(:account_update).concat [:first_name, :last_name, :username]
-      devise_parameter_sanitizer.for(:sign_up).concat [:first_name, :last_name, :username]
-    end
-
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.for(:account_update).concat [:first_name, :last_name, :username]
+    devise_parameter_sanitizer.for(:sign_up).concat [:first_name, :last_name, :username]
+  end
 end
