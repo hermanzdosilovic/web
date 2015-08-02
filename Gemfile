@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.0'
+gem 'rails', '4.2.3'
 gem 'mysql2'
 
 gem 'bootstrap-sass', '~> 3.3.3'

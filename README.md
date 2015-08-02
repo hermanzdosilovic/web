@@ -5,9 +5,9 @@ My personal website and blog.
 About
 -----
 
-* Ruby `2.1.5`
+* Ruby `2.2.2`
 
-* Rails `4.2.0`
+* Rails `4.2.3`
 
 * MySQL
 
@@ -15,7 +15,7 @@ Setup
 -----
 
 	$ bundle
-	$ rake db:create db:migrate
+	$ rake db:setup
 
 License
 -------
