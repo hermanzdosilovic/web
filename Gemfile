@@ -8,6 +8,7 @@ gem 'devise', '~> 3.4.0'
 gem 'jquery-rails'
 gem 'mina'
 gem 'sass-rails', '~> 5.0'
+gem 'simple_form'
 gem 'slim'
 gem 'uglifier', '>= 1.3.0'
 
