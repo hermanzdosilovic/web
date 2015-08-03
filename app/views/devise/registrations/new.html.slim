@@ -4,9 +4,9 @@
       h3 Sign up
     .panel-body
       = simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-          = f.input :first_name, placeholder: 'Enter your first name'
+          = f.input :first_name, placeholder: 'Enter your first name', autofocus: true
           = f.input :last_name, placeholder: 'Enter your last name'
-          = f.input :email, autofocus: true, placeholder: 'Enter your email'
+          = f.input :email, placeholder: 'Enter your email'
           = f.input :password, autocomplete: "off", placeholder: 'Choose your new password'
           = f.input :password_confirmation, autocomplete: "off", placeholder: 'Confirm password'
           = f.submit "Sign up", class: 'btn btn-success'
