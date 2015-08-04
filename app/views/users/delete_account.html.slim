@@ -3,6 +3,4 @@
     .panel-heading
       h3 Confirm password to continue
     .panel-body
-      = simple_form_for(@user, url: registration_path(@user), method: :delete) do |f|
-        = f.input :password, autofocus: true
-        = f.button :submit, 'Confirm password'
+      = render 'users/delete_account_body'

@@ -5,7 +5,7 @@ module Admin
         super
       else
         resource.errors[:password] << "Incorrect password"
-        render 'admin/users/delete_account'
+        render 'users/delete_account'
       end
     end
   end

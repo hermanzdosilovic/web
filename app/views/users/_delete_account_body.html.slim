@@ -1,0 +1,4 @@
+= simple_form_for(@user, url: registration_path(@user), method: :delete, remote: true) do |f|
+  = f.input :password, autofocus: true, label: "Password (#{link_to('Forgot your password?', new_user_password_path)})".html_safe
+  = f.button :submit, 'Confirm password', class: 'btn-primary'
+  .clearfix
