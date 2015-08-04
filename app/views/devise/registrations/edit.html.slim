@@ -13,4 +13,5 @@
           = f.submit 'Update', class: 'btn btn-primary'
           = link_to 'Cancel', root_path, class: 'btn'
           .pull-right
-            = link_to 'Delete my account', admin_delete_account_path, data: {confirm: "Are you sure?"}, class: 'btn btn-danger'
+            = link_to 'Delete my account', delete_account_path, data: {confirm: "Are you sure?"}, class: 'btn btn-danger'
+            = link_to 'Forgot password', new_user_password_path
