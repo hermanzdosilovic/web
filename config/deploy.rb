@@ -7,7 +7,7 @@ set :repository, 'git@github.com:hermanzdosilovic/web.git'
 set :branch, 'master'
 
 set :user, 'pi'
-set :domain, 'gitac.local'
+set :domain, 'gitac.ddns.net'
 set :deploy_to, '/var/www/web'
 set :port, '22219'
 set :forward_agent, true
