@@ -5,6 +5,7 @@ gem 'mysql2'
 
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'devise', '~> 3.4.0'
+gem 'devise_invitable'
 gem 'jquery-rails'
 gem 'mina'
 gem 'sass-rails', '~> 5.0'

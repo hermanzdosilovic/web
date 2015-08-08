@@ -3,4 +3,8 @@
     .panel-heading
       h3 Confirm password to continue
     .panel-body
-      = render 'users/delete_account_body'
+      = simple_form_for(@user, url: registration_path(@user), method: :delete) do |f|
+        = f.input :password, autofocus: true, label: "Password (#{link_to('Forgot your password?', new_user_password_path)})".html_safe
+        = f.button :submit, 'Confirm password', class: 'btn-primary'
+        .clearfix
+

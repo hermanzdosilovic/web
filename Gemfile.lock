@@ -64,6 +64,9 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    devise_invitable (1.5.2)
+      actionmailer (>= 3.2.6, < 5)
+      devise (>= 3.2.0)
     erubis (2.7.0)
     execjs (2.5.2)
     globalid (0.3.5)
@@ -174,6 +177,7 @@ DEPENDENCIES
   binding_of_caller
   bootstrap-sass (~> 3.3.3)
   devise (~> 3.4.0)
+  devise_invitable
   jquery-rails
   letter_opener
   mina
