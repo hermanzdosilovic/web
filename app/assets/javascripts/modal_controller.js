@@ -10,7 +10,7 @@ function renderModal(html, selector, title, body, footer) {
   if (body) $modal.find('.modal-body').html(body);
 
   $modal.on('hidden.bs.modal', function() {
-    $(this).destroy();
+    $(this).remove();
   });
 
   $('body').append($modal);
