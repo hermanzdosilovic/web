@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: 'admin/registrations', passwords: 'admin/passwords' }
-  scope :users do
-    get 'delete_account', controller: 'users', as: :delete_account
-  end
 
   root 'home#index'
+
+  scope :users, controller: 'admin/users' do
+    get :edit_password
+    patch :edit_password, to: :update_password
+    get :delete_account
+  end
 
   namespace :admin do
     root 'posts#index'

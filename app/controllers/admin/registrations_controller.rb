@@ -10,8 +10,8 @@ module Admin
         Devise.sign_out_all_scopes ? sign_out : sign_out(resource_name)
         render js: "window.location = '#{root_path}'"
       else
-        resource.errors[:password] << "Incorrect password"
-        render 'users/delete_account'
+        resource.errors[:password] << 'Incorrect password'
+        render 'admin/users/delete_account'
       end
     end
 
