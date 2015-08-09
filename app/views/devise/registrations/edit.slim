@@ -7,12 +7,7 @@
           = f.input :first_name, placeholder: resource.first_name, autofocus: true
           = f.input :last_name, placeholder: resource.last_name
           = f.input :email, placeholder: resource.email
-          = f.input :password, placeholder: "Leave blank if you don't want to change it"
-          = f.input :password_confirmation
-          br
-          br
-          = f.input :current_password, placeholder: 'We need your current password to confirm your changes', label: "Current password (#{link_to('Forgot your password?', new_user_password_path)})".html_safe
           = f.submit 'Update', class: 'btn btn-primary'
           = link_to 'Cancel', admin_root_path, class: 'btn'
           .pull-right
-            = link_to 'Delete my account', delete_account_path, class: 'btn btn-danger', remote: true
+            = link_to 'Delete my account', delete_account_path, class: 'btn btn-danger', data: {confirm: 'Are you sure?'}, remote: true
