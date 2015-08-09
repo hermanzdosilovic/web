@@ -1,4 +1,4 @@
-function renderModal(html, selector, title, body, footer) {
+function renderModal(html, selector, title, body) {
   var $modal = $('.' + selector);
 
   if ($modal.length === 0) {
