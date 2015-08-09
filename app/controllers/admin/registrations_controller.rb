@@ -6,6 +6,8 @@ module Admin
 
     def destroy
       if resource.valid_password?(params[:user][:password])
+        resource.destroy
+        Devise.sign_out_all_scopes ? sign_out : sign_out(resource_name)
         render js: "window.location = '#{root_path}'"
       else
         resource.errors[:password] << "Incorrect password"
