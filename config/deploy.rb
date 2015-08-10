@@ -12,8 +12,7 @@ set :deploy_to, '/var/www/web'
 set :port, '22219'
 set :forward_agent, true
 
-set :shared_paths, ['log', 'public/system']
-set :linked_files, %w{.env}
+set :shared_paths, %w{.env}
 
 task setup: :environment do
   queue! %[mkdir -p "#{deploy_to}/#{shared_path}/log"]
