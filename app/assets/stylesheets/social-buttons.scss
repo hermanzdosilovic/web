@@ -46,7 +46,7 @@ $icon-list: (
     color: white;
   }
   display: inline-block;
-  margin-right: 0.4em;
+  margin: 0.4em;
 }
 
 // Basic icon style
@@ -76,8 +76,8 @@ $icon-list: (
   text-decoration: none;
   // Remove border radius to make icons square
   border-radius:100%;
-  width: 2.2em;
-  height: 2.2em;
+  width: 2.4em;
+  height: 2.4em;
   text-align: center;
 
   // Vertical Centering
