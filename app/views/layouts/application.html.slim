@@ -15,4 +15,8 @@ html
     = csrf_meta_tags
   body
     .container
-      = yield
+      .main style="background-image: url('#{asset_path("cover.jpg")}')"
+        .cover
+        = yield
+        #footer.footer
+          = render 'layouts/footer'
