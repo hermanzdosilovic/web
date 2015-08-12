@@ -4,9 +4,12 @@
   box-sizing: border-box;
 }
 
-// Import icon font, I've used Entypo (http://entypo.com/)
-// @import url(http://weloveiconfonts.com/api/?family=entypo);
-@import "entypo";
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
 
 // List of icon unicode symbols from the icon font
 // and background colours for the icons
@@ -18,9 +21,9 @@ $icon-list: (
   dropbox "\F330" #167ab6,
   skype "\F339" #00AFF0,
   github "\F300" #333333,
-  rss "\E73A" #FB7629,
   mail "\2709" #DD4B39,
-  bucket "\e756" #205081,
+  cv "\e731" #FF6600,
+  bitbucket "\00E9" #205081
 );
 
 // Each loop for creating the icon CSS
@@ -51,7 +54,7 @@ $icon-list: (
 
 // Basic icon style
 .icon {
-  font-family: 'entypo';
+  font-family: 'entypo', 'zocial';
   speak: none;
   font-style: normal;
   font-weight: normal;
