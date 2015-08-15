@@ -7,10 +7,9 @@ default: &default
 
 production:
   <<: *default
-  database: web
+  database: web_production
   username: web_p
   password: yA6PGwdyMCHab8xfZgHs
-  socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default

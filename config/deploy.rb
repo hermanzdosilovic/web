@@ -6,10 +6,9 @@ require 'mina/rbenv'
 set :repository, 'git@github.com:hermanzdosilovic/web.git'
 set :branch, 'master'
 
-set :user, 'pi'
-set :domain, 'gitac.ddns.net'
-set :deploy_to, '/var/www/web'
-set :port, '22219'
+set :user, 'titus'
+set :domain, 'shpaolin.ddns.net'
+set :deploy_to, '/var/www/web_production'
 set :forward_agent, true
 
 set :shared_paths, %w{.env}
