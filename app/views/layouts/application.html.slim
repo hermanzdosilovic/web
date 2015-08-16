@@ -1,9 +1,5 @@
 doctype html
 html
-  /!
-    This website is currently running on private Raspberry Pi server. If You are interested in how I configured
-    Raspberry Pi, checkout this repository: https://github.com/hermanzdosilovic/raspberrypi
-
   head
     meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
     title Herman Zvonimir Došilović
@@ -15,7 +11,8 @@ html
     = csrf_meta_tags
   body
     .container
-      .main style="background-image: url('http://wallpaper.hermanzdosilovic.me')"
+      - wallpaper_url = Rails.env.development? ? 'http://rosw.ddns.net.dev' : 'http://wallpaper.hermanzdosilovic.me'
+      .main style="background-image: url(#{wallpaper_url})"
         = yield
         #footer.footer
           = render 'layouts/footer'
