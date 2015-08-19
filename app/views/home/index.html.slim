@@ -3,18 +3,12 @@
   h1.logo Herman Zvonimir Došilović
 
 .content
-  .social__container
-    .social__item
-      <a target="_blank" href="https://www.linkedin.com/in/hermanzdosilovic" class="social__icon--linkedin"><i class="icon--linkedin"></i></a>
-    .social__item
-      <a target="_blank" href="https://www.facebook.com/profile.php?id=1203852653" class="social__icon--facebook"><i class="icon--facebook"></i></a>
-    .social__item
-      <a target="_blank" href="https://github.com/hermanzdosilovic" class="social__icon--github"><i class="icon--github"></i></a>
-    .social__item
-      <a target="_blank" href="https://bitbucket.org/hermanzdosilovic/" class="social__icon--bitbucket"><i class="icon--bitbucket"></i></a>
-    .social__item
-      <a href="mailto:hermanz.dosilovic@gmail.com" class="social__icon--mail"><i class="icon--mail"></i></a>
-    .social__item
-      <a target="_blank" href="https://dl.dropboxusercontent.com/u/96682413/Herman_Zvonimir_Dosilovic_Resume.pdf" class="social__icon--cv"><i class="icon--cv"></i></a>
+  .social
+    = iconfont_linkedin link: 'https://www.linkedin.com/in/hermanzdosilovic', round: true, input_html: { target: '_blank' }
+    = iconfont_facebook link: 'https://www.facebook.com/profile.php?id=1203852653', round: true, input_html: { target: '_blank' }
+    = iconfont_github link: 'https://github.com/hermanzdosilovic', round: true, input_html: { target: '_blank' }
+    = iconfont_bitbucket link: 'https://bitbucket.org/hermanzdosilovic/', round: true, input_html: { target: '_blank' }
+    = iconfont_mail link: 'mailto:hermanz.dosilovic@gmail.com', round: true
+    = iconfont_document link: 'https://dl.dropboxusercontent.com/u/96682413/Herman_Zvonimir_Dosilovic_Resume.pdf', round: true, input_html: { target: '_blank' }
   .motto
     h4.info-text Site under construction
