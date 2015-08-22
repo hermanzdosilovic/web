@@ -9,7 +9,7 @@ production:
   <<: *default
   database: web_production
   username: web_p
-  password: yA6PGwdyMCHab8xfZgHs
+  password: <%= ENV["WEB_P_PASSWORD"] %>
 
 development:
   <<: *default
