@@ -7,16 +7,15 @@ set :repository, 'git@github.com:hermanzdosilovic/web.git'
 set :branch, 'master'
 
 set :user, 'titus'
-set :domain, 'shpaolin.ddns.net'
+set :domain, 'hermanzdosilovic.me'
 set :deploy_to, '/var/www/web_production'
 set :forward_agent, true
 
-set :shared_paths, %w{.env}
+set :shared_paths, %w{.env log}
 
 task setup: :environment do
   queue! %[mkdir -p "#{deploy_to}/#{shared_path}/log"]
   queue! %[chmod g+rx,u+rwx "#{deploy_to}/#{shared_path}/log"]
-  queue! %[mkdir -p "#{deploy_to}/#{shared_path}/system"]
 end
 
 desc "Deploys the current version to the server."
