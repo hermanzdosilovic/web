@@ -1,0 +1,26 @@
+@import "style";
+
+.jumbotron {
+  background: transparent;
+  text-align: center;
+  color: white;
+  p {
+    margin-top: 40px;
+  }
+}
+
+.social {
+  text-align: center;
+  margin-top: 40px;
+  .social-group {
+    display: inline-block;
+    .weloveiconfonts__item {
+      display: inline-block;
+    }
+  }
+}
+
+body {
+  background: url('http://wallpaper.hermanzdosilovic.me') no-repeat center center fixed;
+  background-size: cover;
+}

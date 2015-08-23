@@ -1,16 +1,1 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "coming-sssoon";
-@import "weloveiconfonts_rails";
-
-.login-panel {
-  margin-top: 10%;
-}
-
-.social {
-  margin-top: 10px;
-  text-align: center;
-  .weloveiconfonts__item {
-    display: inline-block;
-  }
-}
+@import "style";

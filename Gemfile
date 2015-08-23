@@ -13,7 +13,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'simple_form'
 gem 'slim'
 gem 'uglifier', '>= 1.3.0'
-gem 'weloveiconfonts_rails', '1.1.0'
+gem 'weloveiconfonts_rails', '1.1.1'
 
 group :development, :test do
   gem 'better_errors'
