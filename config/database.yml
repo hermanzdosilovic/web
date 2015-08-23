@@ -11,6 +11,12 @@ production:
   username: web_p
   password: <%= ENV["WEB_P_PASSWORD"] %>
 
+staging:
+  <<: *default
+  database: web_staging
+  username: web_s
+  password: <%= ENV["WEB_S_PASSWORD"] %>
+
 development:
   <<: *default
   database: web_development

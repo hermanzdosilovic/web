@@ -3,13 +3,23 @@ require 'mina/rails'
 require 'mina/git'
 require 'mina/rbenv'
 
-set :repository, 'git@github.com:hermanzdosilovic/web.git'
-set :branch, 'master'
-
 set :user, 'titus'
-set :domain, 'hermanzdosilovic.me'
-set :deploy_to, '/var/www/web_production'
+set :repository, 'git@github.com:hermanzdosilovic/web.git'
 set :forward_agent, true
+
+task :production do
+  set :domain, 'hermanzdosilovic.me'
+  set :deploy_to, '/var/www/web_production'
+  set :rails_env, 'production'
+  set :branch, 'master'
+end
+
+task :staging do
+  set :domain, 'staging.hermanzdosilovic.me'
+  set :deploy_to, '/var/www/web_staging'
+  set :rails_env, 'staging'
+  set :branch, 'development'
+end
 
 set :shared_paths, %w{.env log}
 
