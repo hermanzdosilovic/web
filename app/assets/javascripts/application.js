@@ -4,7 +4,8 @@
 //= require modal_controller
 //= require weloveiconfonts_rails
 //= require jquery.easing
-//= require get-shit-done
+//= require clean-blog
+//= norequire get-shit-done
 
 $(document).ready(function(){
   $(function() {
@@ -15,5 +16,8 @@ $(document).ready(function(){
           }, 1500, 'easeInOutExpo');
           event.preventDefault();
       });
+  });
+  $('.nav a').on('click', function(){
+    $(".navbar-toggle").click()
   });
 });

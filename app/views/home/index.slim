@@ -1,9 +1,19 @@
-.landing.page
-  .container
-    = image_tag asset_path('herman.jpg'), class: 'img img-circle'
-    h1 Hello, my name is Herman.
-    h2 I am a Computer Science student at FER and RoR Developer at Infinum.
-    h3 Here you can read about my work and interests.
+header.intro-header
+  .container.cover.blue
+    .row
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+        .site-heading
+          .hidden-xs
+            = image_tag asset_path('herman.jpg'), class: 'img-circle'
+          .visible-xs-inline-block
+            = image_tag asset_path('herman.jpg'), class: 'img-circle'
+          h1 Herman Zvonimir Došilović
+          hr.small
+          span.subheading
+            | Computer Science student at&nbsp
+            = link_to 'FER', 'http://www.fer.unizg.hr/', target: '_blank'
+            |&nbspand RoR Developer at&nbsp
+            = link_to 'Infinum', 'https://infinum.co', target: '_blank'
 
 .aboutme.page#about-me
   .container
