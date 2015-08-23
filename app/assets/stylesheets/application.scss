@@ -1,21 +1,43 @@
 @import "style";
 @import "get-shit-done";
 
+body {
+  padding-top: 70px;
+}
+
 .footer {
   color: black;
+  background-color: mix(black, white, 3);
 }
 
-body {
-  padding-top: 90px;
+.page {
+  padding: 70px 0;
 }
 
-.landing-page {
+.landing.page {
   text-align: center;
+  background-color: mix(black, white, 3);
   img {
     max-width: 256px;
   }
 }
 
+.projects.page {
+  background-color: mix(black, white, 3);
+}
+
 .visible-xs-inline-block .navbar-brand {
   font-size: 18px;
+}
+
+.social {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 250px;
+  .social-group {
+    display: inline-block;
+    .weloveiconfonts__item {
+      display: inline-block;
+    }
+  }
 }

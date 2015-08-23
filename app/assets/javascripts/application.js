@@ -3,4 +3,17 @@
 //= require bootstrap-sprockets
 //= require modal_controller
 //= require weloveiconfonts_rails
-//= no-require get-shit-done
+//= require jquery.easing
+//= require get-shit-done
+
+$(document).ready(function(){
+  $(function() {
+      $('body').on('click', '.page-scroll a', function(event) {
+          var $anchor = $(this);
+          $('html, body').stop().animate({
+              scrollTop: $($anchor.attr('href')).offset().top
+          }, 1500, 'easeInOutExpo');
+          event.preventDefault();
+      });
+  });
+});
