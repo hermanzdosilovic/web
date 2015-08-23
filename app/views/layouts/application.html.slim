@@ -10,6 +10,5 @@ html
     = csrf_meta_tags
   body#top
     = render 'layouts/navigation'
-    .container
-      = yield
+    = yield
     = render 'layouts/footer'

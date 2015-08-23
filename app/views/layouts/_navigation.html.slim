@@ -1,12 +1,19 @@
-navbar.navbar-default.navbar-fixed-top
-  .container
+nav.navbar.navbar-default.navbar-fixed-top
+  .container.navbar-container
     .navbar-header.page-scroll
       = button_tag class: 'navbar-toggle', 'data-toggle': 'collapse',  'data-target': "#navbar-collapse-1" do
         span.sr-only Toggle navigation
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      = link_to 'Herman Zvonimir Došilović', '#top', class: 'navbar-brand'
+      .visible-xs-inline-block
+        .navbar-brand.navbar-personal-image
+          = image_tag asset_path('herman.jpg'), class: 'img-circle'
+        = link_to 'Herman', '#top', class: 'navbar-brand'
+      .hidden-xs
+        .navbar-brand.navbar-personal-image
+          = image_tag asset_path('herman.jpg'), class: 'img-circle'
+        = link_to 'Herman Zvonimir Došilović', '#top', class: 'navbar-brand'
     .collapse.navbar-collapse#navbar-collapse-1
       ul.nav.navbar-nav.navbar-right
         li.hidden

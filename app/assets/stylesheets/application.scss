@@ -5,6 +5,13 @@
   color: black;
 }
 
-.navbar-brand {
-  line-height: 1.42857143;
+.navbar-brand.navbar-personal-image {
+  padding: 0px 10px 0px 15px;
+  height: 70px;
+  margin: 0;
+  img {
+    height: 68px;
+    width: auto;
+    padding-top: 1px;
+  }
 }
