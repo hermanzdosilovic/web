@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: 'admin/registrations', passwords: 'admin/passwords' }
 
-  root 'preview/home#index'
+  root 'home#index'
 
   scope :users, controller: 'admin/users' do
     get :edit_password

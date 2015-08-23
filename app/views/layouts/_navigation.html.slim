@@ -1,0 +1,19 @@
+navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header.page-scorll
+      = button_tag class: 'navbar-toggle', 'data-toggle': 'collapse',  'data-target': "#navbar-collapse-1" do
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      = link_to 'Herman Zvonimir Došilović', '#top', class: 'navbar-brand'
+    .collapse.navbar-collapse#navbar-collapse-1
+      ul.nav.navbar-nav.navbar-right
+        li.hidden
+          = link_to '', '#page-top'
+        li.page-scroll
+          = link_to 'About me', '#about'
+        li.page-scroll
+          = link_to 'Projects', '#projects'
+        li.page-scroll
+          = link_to 'Contact', '#contact'
