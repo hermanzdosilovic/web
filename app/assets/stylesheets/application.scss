@@ -5,13 +5,17 @@
   color: black;
 }
 
-.navbar-brand.navbar-personal-image {
-  padding: 0px 10px 0px 15px;
-  height: 70px;
-  margin: 0;
+body {
+  padding-top: 90px;
+}
+
+.landing-page {
+  text-align: center;
   img {
-    height: 68px;
-    width: auto;
-    padding-top: 1px;
+    max-width: 256px;
   }
+}
+
+.visible-xs-inline-block .navbar-brand {
+  font-size: 18px;
 }

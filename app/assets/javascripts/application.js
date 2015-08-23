@@ -3,4 +3,4 @@
 //= require bootstrap-sprockets
 //= require modal_controller
 //= require weloveiconfonts_rails
-//= require get-shit-done
+//= no-require get-shit-done
