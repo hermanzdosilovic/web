@@ -1,45 +1,20 @@
-@import "style";
-@import "clean-blog";
-
-.footer {
-  color: black;
-  background-color: mix(black, white, 3);
-}
-
-.cover{
-    opacity: 1;
-    background-color: rgba(0,0,0,.6);
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.cover.black{
-    background-color: rgba(0,0,0,.6);
-}
-.cover.blue{
-    background-color: rgba(5, 31, 60, 0.6);
-}
-.cover.green{
-    background-color: rgba(3, 28, 7, 0.6);
-}
-.cover.orange{
-    background-color: rgba(37, 28, 5, 0.6);
-}
-.cover.red{
-    background-color: rgba(35, 3, 2, 0.66);
-}
+@import 'style';
+@import 'clean-blog';
 
 header.intro-header {
+  min-height: 100%;
+  margin: 0;
   background-image: url('http://rosw.ddns.net.dev');
-  opacity: 20;
   .hidden-xs img {
     max-width: 200px;
   }
   .visible-xs-inline-block img {
     max-width: 128px;
+  }
+}
+@media only screen and (min-height: 520px) {
+  header.intro-header {
+    height: 100%;
   }
 }
 
@@ -52,6 +27,7 @@ header.intro-header {
   font-weight: bold;
 }
 
+
 .landing.page {
   text-align: center;
   background-color: mix(black, white, 3);
@@ -61,12 +37,11 @@ header.intro-header {
   background-color: mix(black, white, 3);
 }
 
-.visible-xs-inline-block .navbar-brand {
+.navbar-brand.visible-xs-inline-block {
   font-size: 16px;
 }
-
-.hidden-xs .navbar-brand {
-  font-size: 20px;
+#navbar-collapse-1 {
+  text-align: center;
 }
 
 .social {

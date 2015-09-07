@@ -73,20 +73,24 @@ hr.small {
     color: white;
     padding: 20px;
   }
-  .navbar-custom .navbar-brand:hover,
-  .navbar-custom .navbar-brand:focus {
+  .navbar-custom .navbar-brand:hover {
     color: rgba(255, 255, 255, 0.8);
+  }
+  .navbar-custom .navbar-brand:focus {
+    color: white;
   }
   .navbar-custom .nav li a {
     color: white;
     padding: 20px;
   }
-  .navbar-custom .nav li a:hover,
-  .navbar-custom .nav li a:focus {
+  .navbar-custom .nav li a:hover {
     color: rgba(255, 255, 255, 0.8);
   }
+  .navbar-custom .nav li a:focus {
+    color: white;
+  }
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 768px) {
   .navbar-custom {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
@@ -106,22 +110,20 @@ hr.small {
     top: -61px;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid #f2f2f2;
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
+    /*-webkit-transition: -webkit-transform 0.3s;*/
+    /*-moz-transition: -moz-transform 0.3s;*/
+    /*transition: transform 0.3s;*/
   }
   .navbar-custom.is-fixed .navbar-brand {
     color: #404040;
   }
-  .navbar-custom.is-fixed .navbar-brand:hover,
-  .navbar-custom.is-fixed .navbar-brand:focus {
+  .navbar-custom.is-fixed .navbar-brand:hover {
     color: #0085a1;
   }
   .navbar-custom.is-fixed .nav li a {
     color: #404040;
   }
-  .navbar-custom.is-fixed .nav li a:hover,
-  .navbar-custom.is-fixed .nav li a:focus {
+  .navbar-custom.is-fixed .nav li a:hover {
     color: #0085a1;
   }
   .navbar-custom.is-visible {

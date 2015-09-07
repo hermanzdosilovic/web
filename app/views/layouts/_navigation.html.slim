@@ -1,4 +1,4 @@
-nav.navbar.navbar-fixed-top.navbar-custom.navbar-inverse
+nav.navbar.navbar-default.navbar-custom.navbar-fixed-top
   .container-fluid
     .navbar-header.page-scroll
       = button_tag class: 'navbar-toggle', 'data-toggle': 'collapse',  'data-target': "#navbar-collapse-1" do
@@ -7,10 +7,8 @@ nav.navbar.navbar-fixed-top.navbar-custom.navbar-inverse
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      .visible-xs-inline-block
-        = link_to 'Herman Zvonimir Došilović', '#home', class: 'navbar-brand'
-      .hidden-xs
-        = link_to 'Herman Zvonimir Došilović', '#home', class: 'navbar-brand'
+      = link_to 'Herman Zvonimir Došilović', '#home', class: 'navbar-brand visible-xs-inline-block'
+      = link_to 'Herman Zvonimir Došilović', '#home', class: 'navbar-brand hidden-xs'
     .collapse.navbar-collapse#navbar-collapse-1
       ul.nav.navbar-nav.navbar-right
         li.hidden

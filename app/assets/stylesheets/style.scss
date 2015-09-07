@@ -1,26 +1,48 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "weloveiconfonts_rails";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'weloveiconfonts_rails';
 
-html {
-  position: relative;
-  min-height: 100%;
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
-body {
-  margin-bottom: 60px;
+body .container {
+  height:100%;
+  min-height:100%;
 }
 
 .login-panel {
   margin-top: 10%;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
+.cover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .6);
+  left: 0px;
+  top: 0px;
   width: 100%;
-  height: 60px;
-  color: #f5f5f5;
-  text-align: center;
+  height: 100%;
+  min-height: 100%;
+  z-index: 1;
 }
 
+.cover.black{
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.cover.blue{
+  background-color: rgba(5, 31, 60, 0.6);
+}
+
+.cover.green{
+  background-color: rgba(3, 28, 7, 0.6);
+}
+
+.cover.orange{
+  background-color: rgba(37, 28, 5, 0.6);
+}
+
+.cover.red{
+  background-color: rgba(35, 3, 2, 0.66);
+}
