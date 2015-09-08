@@ -20,4 +20,7 @@ $(document).ready(function(){
         $(this).collapse('hide');
     }
   });
+  $('body').scrollspy({
+    target: '.navbar-fixed-top'
+  });
 });

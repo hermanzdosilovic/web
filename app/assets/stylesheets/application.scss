@@ -20,6 +20,13 @@ header.intro-header {
   }
 }
 
+.nav.navbar-nav li.active a,
+.nav.navbar-nav li.active a:hover,
+.nav.navbar-nav li.active a:focus {
+  background-color: transparent;
+  color: #0085a1;
+}
+
 .page {
   padding-top: 60px;
   min-height: 100%;
