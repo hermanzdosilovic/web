@@ -11,8 +11,12 @@ header.intro-header {
   .visible-xs-inline-block img {
     max-width: 128px;
   }
-  .container .row {
-    z-index: 9999;
+  .container {
+    display: table;
+    .row {
+      display: table-cell;
+      vertical-align: middle;
+    }
   }
 }
 
