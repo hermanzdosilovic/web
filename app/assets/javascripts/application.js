@@ -15,9 +15,9 @@ $(document).ready(function(){
       }, 1500, 'easeInOutExpo');
       event.preventDefault();
   });
-  $('body').on('click','.navbar-collapse.in',function(e) {
+  $('body').on('click', '.navbar-custom',function(e) {
     if( $(e.target).is('a') ) {
-        $(this).collapse('hide');
+        $('.navbar-collapse.in').collapse('hide');
     }
   });
   $('body').scrollspy({
