@@ -16,10 +16,24 @@ header.intro-header {
     .row {
       display: table-cell;
       vertical-align: middle;
+      .subheading a {
+        color: inherit;
+        font-weight: bold;
+      }
     }
   }
 }
 
+.page {
+  padding-top: 120px;
+  min-height: 100%;
+  text-align: center;
+  @media only screen and (min-height: 600px) {
+    height: 100%;
+  }
+}
+
+// scrollspy settings
 .nav.navbar-nav li.active a,
 .nav.navbar-nav li.active a:hover,
 .nav.navbar-nav li.active a:focus {
@@ -27,20 +41,6 @@ header.intro-header {
   color: #0085a1;
 }
 
-.page {
-  padding-top: 60px;
-  min-height: 100%;
-}
-@media only screen and (min-height: 520px) {
-  .page {
-    height: 100%;
-  }
-}
-
-.subheading a {
-  color: inherit;
-  font-weight: bold;
-}
 
 .navbar-brand.visible-xs-inline-block {
   font-size: 16px;
@@ -58,10 +58,56 @@ header.intro-header {
   }
 }
 
+hr {
+  margin: 0;
+}
+hr.dashed {
+  border: 1px dashed;
+}
 
+.projects {
+  min-height: 100%;
+  padding-top: 120px;
+  text-align: center;
+  h1 {
+    padding-bottom: 30px;
+  }
+  .all-projects {
+    text-align:center;
+  }
+  .portfolio-item {
+    margin: 2px -4px 2px 2px;
+    display:inline-block;
+    float:none;
+    text-align:left;
+    @media only screen and (max-width: 768px) {
+      max-width: 300px;
+    }
+    a {
+      color: inherit;
+      text-decoration: inherit;
+      &:hover {
+        color: #0085a1;
+      }
+    }
+    &:hover {
+      color: #0085a1;
+      background-color: #efedef;
+      transition: 1s;
+      -moz-transition: 1s;
+      -webkit-transition: 1s;
+    }
+  }
+}
 
+.contact {
+  // background-color: #f3eee1;
+  background-color: #f7f5f7;
+}
 
-
+footer {
+  background-color: #343234;
+}
 
 // #portfolio .portfolio-item {
 //     right: 0;
@@ -119,6 +165,7 @@ header.intro-header {
 //         margin: 0 0 30px;
 //     }
 // }
+
 
 .portfolio-modal .modal-content {
     padding: 100px 0;
