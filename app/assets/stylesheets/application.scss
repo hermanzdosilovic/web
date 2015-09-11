@@ -12,6 +12,10 @@ header.intro-header {
     max-width: 128px;
   }
   .container {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: absolute;
     display: table;
     .row {
       display: table-cell;
@@ -21,53 +25,15 @@ header.intro-header {
         font-weight: bold;
       }
     }
-  }
-}
-
-.page {
-  padding-top: 120px;
-  min-height: 100%;
-  text-align: center;
-  @media only screen and (min-height: 600px) {
-    height: 100%;
-  }
-}
-
-// scrollspy settings
-.nav.navbar-nav li.active a,
-.nav.navbar-nav li.active a:hover,
-.nav.navbar-nav li.active a:focus {
-  background-color: transparent;
-  color: #0085a1;
-}
-
-
-.navbar-brand.visible-xs-inline-block {
-  font-size: 16px;
-}
-
-.social {
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 250px;
-  .social-group {
-    display: inline-block;
-    .weloveiconfonts__item {
-      display: inline-block;
+    .site-heading {
+      padding-bottom: 0;
     }
   }
 }
 
-hr {
-  margin: 0;
-}
-hr.dashed {
-  border: 1px dashed;
-}
-
 .projects {
-  min-height: 100%;
   padding-top: 120px;
+  padding-bottom: 60px;
   text-align: center;
   h1 {
     padding-bottom: 30px;
@@ -102,8 +68,52 @@ hr.dashed {
 
 .contact {
   // background-color: #f3eee1;
+  text-align: center;
+  padding-top: 120px;
   background-color: #f7f5f7;
 }
+
+.fullscreen {
+  width: 100%;
+  min-height: 650px;
+}
+
+.min-fullscreen {
+  width: 100%;
+}
+
+// scrollspy settings
+.nav.navbar-nav li.active a,
+.nav.navbar-nav li.active a:hover,
+.nav.navbar-nav li.active a:focus {
+  background-color: transparent;
+  color: #0085a1;
+}
+
+.navbar-brand.visible-xs-inline-block {
+  font-size: 16px;
+}
+
+.social {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 250px;
+  .social-group {
+    display: inline-block;
+    .weloveiconfonts__item {
+      display: inline-block;
+    }
+  }
+}
+
+hr {
+  margin: 0;
+}
+hr.dashed {
+  border: 1px dashed;
+}
+
+
 
 footer {
   background-color: #343234;

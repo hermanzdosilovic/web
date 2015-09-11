@@ -23,4 +23,12 @@ $(document).ready(function(){
   $('body').scrollspy({
     target: '.navbar-fixed-top'
   });
+
+  window.onresize = function () {
+    $('.fullscreen').css('height', $(window).height());
+    $('.min-fullscreen').css('min-height', $(window).height());
+  };
+  $('.fullscreen').css('height', $(window).height());
+  $('.min-fullscreen').css('min-height', $(window).height());
+
 });
