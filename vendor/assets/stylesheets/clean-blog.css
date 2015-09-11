@@ -75,7 +75,7 @@ hr.small {
     color: #404040;
   }
   .navbar-custom .navbar-brand:hover {
-    color: #ddd;
+    color: #0085a1;
   }
   .navbar-custom .navbar-brand:focus {
     color: #404040;
@@ -84,10 +84,10 @@ hr.small {
     color: #404040;
   }
   .navbar-custom .nav li a:hover {
-    color: #ddd;
+    color: #0085a1;
   }
   .navbar-custom .nav li a:focus {
-    color: #404040;
+    color: #0085a1;
   }
   .navbar-custom .navbar-toggle:focus,
   .navbar-custom .navbar-toggle:hover {

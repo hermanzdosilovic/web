@@ -3,7 +3,7 @@
 
 header.intro-header {
   margin: 0;
-  padding: 0px;
+  padding: 0;
   background-image: url('http://rosw.ddns.net.dev');
   .hidden-xs img {
     max-width: 200px;
@@ -12,10 +12,6 @@ header.intro-header {
     max-width: 128px;
   }
   .container {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    position: absolute;
     display: table;
     .row {
       display: table-cell;
@@ -34,42 +30,47 @@ header.intro-header {
 .projects {
   padding-top: 120px;
   padding-bottom: 60px;
+  @media only screen and (max-width: 768px) {
+    padding-top: 100px;
+  }
   text-align: center;
   h1 {
     padding-bottom: 30px;
   }
   .all-projects {
-    text-align:center;
-  }
-  .portfolio-item {
-    margin: 2px -4px 2px 2px;
-    display:inline-block;
-    float:none;
-    text-align:left;
-    @media only screen and (max-width: 768px) {
-      max-width: 300px;
-    }
-    a {
-      color: inherit;
-      text-decoration: inherit;
+    text-align: center;
+    .portfolio-item {
+      margin: 2px -4px 2px 2px;
+      display:inline-block;
+      float:none;
+      text-align:left;
+      @media only screen and (max-width: 768px) {
+        max-width: 300px;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+        &:hover {
+          color: #0085a1;
+        }
+      }
       &:hover {
         color: #0085a1;
+        background-color: #efedef;
+        transition: 1s;
+        -moz-transition: 1s;
+        -webkit-transition: 1s;
       }
-    }
-    &:hover {
-      color: #0085a1;
-      background-color: #efedef;
-      transition: 1s;
-      -moz-transition: 1s;
-      -webkit-transition: 1s;
     }
   }
 }
 
 .contact {
-  // background-color: #f3eee1;
-  text-align: center;
   padding-top: 120px;
+  @media only screen and (max-width: 768px) {
+    padding-top: 100px;
+  }
+  text-align: center;
   background-color: #f7f5f7;
 }
 
@@ -82,7 +83,6 @@ header.intro-header {
   width: 100%;
 }
 
-// scrollspy settings
 .nav.navbar-nav li.active a,
 .nav.navbar-nav li.active a:hover,
 .nav.navbar-nav li.active a:focus {
@@ -109,14 +109,17 @@ header.intro-header {
 hr {
   margin: 0;
 }
+
 hr.dashed {
   border: 1px dashed;
 }
 
-
-
 footer {
   background-color: #343234;
+}
+
+.weloveiconfonts__item {
+  margin: 5px;
 }
 
 // #portfolio .portfolio-item {
