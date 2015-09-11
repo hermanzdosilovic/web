@@ -31,4 +31,7 @@ $(document).ready(function(){
   $('.fullscreen').css('height', $(window).height());
   $('.min-fullscreen').css('min-height', $(window).height());
 
+  $('body').on('click', '#mail', function() {
+    $(this).attr('href', 'mailto:hermanz.dosilovic@gmail.com');
+  });
 });
