@@ -5,7 +5,6 @@
 //= require weloveiconfonts_rails
 //= require jquery.easing
 //= require clean-blog
-//= norequire get-shit-done
 
 $(document).ready(function(){
   $('body').on('click', '.page-scroll a', function(event) {
