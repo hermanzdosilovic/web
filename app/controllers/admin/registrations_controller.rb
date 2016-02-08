@@ -1,5 +1,7 @@
 module Admin
   class RegistrationsController < Devise::RegistrationsController
+    layout 'admin'
+
     def new
       raise ActionController::RoutingError.new('Not Found')
     end

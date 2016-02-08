@@ -1,5 +1,7 @@
 module Admin
   class UsersController < Admin::AdminController
+    layout 'admin'
+
     before_action :load_user
 
     def edit_password
