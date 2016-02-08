@@ -1,5 +1,5 @@
 module Admin
   class SessionsController < Devise::SessionsController
-    layout 'admin'
+    layout 'sessions'
   end
 end

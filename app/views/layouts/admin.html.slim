@@ -3,11 +3,35 @@ html
   head
     meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
     title Herman Zvonimir Došilović
+
     = favicon_link_tag 'favicon.ico'
     = stylesheet_link_tag    'admin', media: 'all'
     = javascript_include_tag 'admin'
+
     meta{name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}
     = csrf_meta_tags
+
   body
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        .navbar-header.page-scroll
+          = button_tag class: 'navbar-toggle', 'data-toggle': 'collapse',  'data-target': "#navbar-collapse-1" do
+
+            span.sr-only
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          = link_to "Admin panel", admin_root_path, class: 'navbar-brand visible-xs-inline-block'
+          = link_to "Admin panel", admin_root_path, class: 'navbar-brand hidden-xs'
+        .collapse.navbar-collapse#navbar-collapse-1
+          ul.nav.navbar-nav.navbar-right
+            li.hidden
+              = link_to 'Home', admin_root_path
+            li
+              = link_to 'Projects', '#projects'
+            li
+              = link_to 'Contact', '#contact'
     .container
       = yield
+      hr
+      = render 'layouts/footer'

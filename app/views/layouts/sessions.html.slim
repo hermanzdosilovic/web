@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    title Herman Zvonimir Došilović
+    = favicon_link_tag 'favicon.ico'
+    = stylesheet_link_tag    'sessions', media: 'all'
+    = javascript_include_tag 'sessions'
+    meta{name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}
+    = csrf_meta_tags
+  body.rosw-wallpaper.cover class=(['black','blue','red','green','orange'].sample)
+    .container
+      = yield

@@ -1,9 +1,13 @@
-@import 'bootstrap-sprockets';
-@import 'bootstrap';
-@import 'weloveiconfonts_rails';
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "weloveiconfonts_rails";
 
-.login-panel {
-  margin-top: 10%;
+.rosw-wallpaper {
+  background: url('http://wallpaper.hermanzdosilovic.me') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 .cover.black{
