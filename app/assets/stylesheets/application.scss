@@ -1,3 +1,50 @@
 @import "bootstrap";
 @import "weloveiconfonts_rails";
 @import "custom";
+
+html, body {
+  height: 100%;
+}
+
+.site { // body html wrapper
+  min-height: 100%;
+  position: relative;
+  padding-top: 62px;
+}
+
+.content { // yield wrapper
+  padding-bottom: 100px;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+
+  line-height: 100px;
+  text-align: center;
+  color: white;
+
+  background-color: #3e3f3a; // #333333
+
+  position: absolute;
+  bottom: 0;
+}
+
+#blue {
+  height: 500px;
+  background-color: blue;
+}
+
+#red {
+  height: 250px;
+  background-color: red;
+}
+
+#green {
+  background-color: green;
+}
+
+// bootstrap fixes
+.navbar-fixed-top {
+  border-width: 1px 1px 1px 1px;
+}

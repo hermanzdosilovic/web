@@ -13,8 +13,10 @@ html
   = csrf_meta_tags
 
   body
-    .container
-      = render 'layouts/navigation'
-      = yield
-      hr
-      = render 'layouts/footer'
+    .site
+      .navigation
+        = render 'layouts/navigation'
+      .content
+        = yield
+      .footer
+        = render 'layouts/footer'
