@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  var navbar_height = 62;
+  var navbarHeight = 0; // 62px but set to 0 because navbar is transparent
   $(window).resize(function() {
-    $(".fullscreen").css("height", $(window).height() - navbar_height);
-    $(".min-fullscreen").css("min-height", $(window).height() - navbar_height);
+    $(".fullscreen").css("height", $(window).height() - navbarHeight);
+    $(".min-fullscreen").css("min-height", $(window).height() - navbarHeight);
   });
-  $(".fullscreen").css("height", $(window).height() - navbar_height);
-  $(".min-fullscreen").css("min-height", $(window).height() - navbar_height);
+  $(".fullscreen").css("height", $(window).height() - navbarHeight);
+  $(".min-fullscreen").css("min-height", $(window).height() - navbarHeight);
 });

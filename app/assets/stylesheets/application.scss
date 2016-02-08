@@ -9,7 +9,7 @@ html, body {
 .site {
   min-height: 100%;
   position: relative;
-  padding-top: 62px;
+  // padding-top: 62px;
 }
 
 .content {
@@ -31,9 +31,16 @@ html, body {
   text-align: center;
 }
 
+.cover {
+  width: inherit;
+  min-width: inherit;
+  height: inherit;
+  min-height: inherit;
+}
+
 .greeting .container img#me {
   width: 200px;
-  margin-top: 62px;
+  margin-top: calc(62px + 62px);
 }
 
 .greeting .container h1#name {
@@ -44,11 +51,13 @@ html, body {
 
 .greeting .container hr.small {
   max-width: 100px;
-  border: 2px solid white;
+  border: 1px solid white;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.greeting .container h1#about {
-  font-size: 31px;
+.greeting .container p#about {
+  font-size: 25px;
   color: white;
 }
 
@@ -70,4 +79,11 @@ html, body {
 // bootstrap fixes
 .navbar-fixed-top {
   border-width: 1px 1px 1px 1px;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation .navbar {
+    background: transparent;
+    border-color: transparent;
+  }
 }
