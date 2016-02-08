@@ -1,3 +1,14 @@
+.greeting.min-fullscreen.random-wallpaper
+  .cover class=['blue', 'red', 'black', 'orange', 'green'].sample
+    .container
+      = image_tag asset_path('me.jpg'), class: 'img-circle', id: 'me'
+      h1#name Herman Zvonimir Došilović
+      hr.small
+      h1#about
+        | Computer Science student at&nbsp
+        = link_to 'FER', 'http://www.fer.unizg.hr/', target: '_blank'
+        |&nbspand Former Ruby on Rails Engineer at&nbsp
+        = link_to 'Infinum', 'https://infinum.co', target: '_blank'
 #red
 #blue
 #red

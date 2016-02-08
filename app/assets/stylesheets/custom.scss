@@ -9,6 +9,13 @@
   -o-background-size: cover;
 }
 
+.cover {
+  width: inherit;
+  min-width: inherit;
+  height: inherit;
+  min-height: inherit;
+}
+
 .cover.black{
   background-color: rgba(0, 0, 0, .6);
 }

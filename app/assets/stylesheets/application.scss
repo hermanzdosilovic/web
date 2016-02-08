@@ -6,30 +6,53 @@ html, body {
   height: 100%;
 }
 
-.site { // body html wrapper
+.site {
   min-height: 100%;
   position: relative;
   padding-top: 62px;
 }
 
-.content { // yield wrapper
+.content {
   padding-bottom: 100px;
 }
 
 .footer {
   height: 100px;
   width: 100%;
-
   line-height: 100px;
   text-align: center;
   color: white;
-
-  background-color: #3e3f3a; // #333333
-
+  background-color: #3e3f3a;
   position: absolute;
   bottom: 0;
 }
 
+.greeting .container {
+  text-align: center;
+}
+
+.greeting .container img#me {
+  width: 200px;
+  margin-top: 62px;
+}
+
+.greeting .container h1#name {
+  font-size: 62px;
+  font-weight: bold;
+  color: white;
+}
+
+.greeting .container hr.small {
+  max-width: 100px;
+  border: 2px solid white;
+}
+
+.greeting .container h1#about {
+  font-size: 31px;
+  color: white;
+}
+
+// for testing
 #blue {
   height: 500px;
   background-color: blue;
