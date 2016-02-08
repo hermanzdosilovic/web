@@ -1,6 +1,6 @@
-nav.navbar.navbar-default.navbar-custom.navbar-fixed-top
+nav.navbar.navbar-default.navbar-fixed-top
   .container-fluid
-    .navbar-header.page-scroll
+    .navbar-header
       = button_tag class: 'navbar-toggle', 'data-toggle': 'collapse',  'data-target': "#navbar-collapse-1" do
 
         span.sr-only
@@ -13,7 +13,5 @@ nav.navbar.navbar-default.navbar-custom.navbar-fixed-top
       ul.nav.navbar-nav.navbar-right
         li.hidden
           = link_to 'Home', '#home'
-        li.page-scroll
-          = link_to 'Projects', '#projects'
-        li.page-scroll
+        li
           = link_to 'Contact', '#contact'
