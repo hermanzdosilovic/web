@@ -7,7 +7,7 @@ $(document).ready(function() {
   changeMinHeightOnResize(".min-fullscreen", 0);
 
   var $window = $(window);
-  var $navbar = $(".navigation .navbar");
+  var $navbar = $(".navbar-default");
 
   $("a.scroll").click(function() {
     $('.navbar-collapse').collapse('hide');
@@ -18,7 +18,7 @@ $(document).ready(function() {
   });
 
   $('body').scrollspy({
-    target: '.navbar-fixed-top'
+    target: '.navbar-default'
   });
 
   $window.scroll(function(event) {
@@ -27,5 +27,9 @@ $(document).ready(function() {
     } else {
       $navbar.addClass("transparent");
     }
+  });
+
+  $('body').on('click', '#mail', function() {
+    $(this).attr('href', 'mailto:hermanz.dosilovic@gmail.com');
   });
 });

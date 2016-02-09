@@ -80,29 +80,18 @@ html, body {
   display: table;
 }
 
+.contact .container h1 {
+  margin-bottom: 62px;
+  margin-top: 62px;
+}
+
 .social {
-  display: table-cell;
+  display: table-row;
   vertical-align: middle;
 }
 
 .social .social-group, .social .weloveiconfonts__item {
   display: inline-block;
-}
-
-// for testing
-#blue {
-  height: 500px;
-  background-color: blue;
-}
-
-#red {
-  height: 250px;
-  background-color: red;
-}
-
-#green {
-  height: 400px;
-  background-color: green;
 }
 
 @media screen and (min-width: 768px) {
@@ -119,7 +108,7 @@ html, body {
   }
 }
 
-// bootstrap fixes
+// bootstrap changes
 .navbar-fixed-top {
   border-width: 1px 1px 1px 1px;
 }
