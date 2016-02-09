@@ -4,7 +4,8 @@
 //= require custom
 
 $(document).ready(function() {
-  changeMinHeightOnResize(".min-fullscreen", 0);
+  changeMinHeightOnResize(".greeting", 0);
+  changeMinHeightOnResize(".contact", 62);
 
   var $window = $(window);
   var $navbar = $(".navbar-default");

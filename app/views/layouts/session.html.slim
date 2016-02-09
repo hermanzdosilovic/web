@@ -16,5 +16,8 @@ html
   = csrf_meta_tags
 
   body
-    .container
-      = yield
+    .site
+      .container
+        = yield
+      .footer
+        = render 'layouts/footer'

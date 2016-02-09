@@ -1,4 +1,4 @@
-.greeting.min-fullscreen.random-wallpaper#home
+.greeting.random-wallpaper#home
   .cover class=['blue', 'red', 'black', 'orange', 'green'].sample
     .container
       = image_tag asset_path('me.jpg'), class: 'img-circle', id: 'me'
@@ -10,7 +10,7 @@
         |&nbspand Former Ruby on Rails Engineer at&nbsp
         = link_to 'Infinum', 'https://infinum.co', target: '_blank'
 
-.contact.min-fullscreen#contact
+.contact#contact
   .container
     h1 Contact me
     .social

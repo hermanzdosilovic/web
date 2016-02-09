@@ -1,26 +1,17 @@
 @import "bootstrap";
-
-html, body {
-  height: 100%;
-}
+@import "custom";
 
 body {
   background-color: #f4f8fb;
 }
 
 .container {
-  position: relative;
-  height: inherit;
+  padding: 5% 0;
+  padding-bottom: 62px;
 }
 
-.login {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50%;
-  margin: auto;
+.sessions-form {
+  padding: 10% 0;
 }
 
 .main-button {
