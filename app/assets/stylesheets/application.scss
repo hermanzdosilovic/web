@@ -28,7 +28,9 @@ html, body {
 }
 
 .greeting .container {
-  position: fixed;
+  @media screen and (min-width: 530px) and (min-height: 500px) {
+    position: fixed;
+  }
   width: 100%;
   text-align: center;
 }
@@ -64,13 +66,17 @@ html, body {
 }
 
 .contact {
-  position: relative;
-  background-color: #fbfbfb;
+  @media screen and (min-width: 530px) and (min-height: 500px) {
+    position: relative;
+  }
+  background-color: #f4f8fb; // fbfbfb
 }
 
 .contact .container {
   text-align: center;
   min-height: inherit;
+  padding-top: 62px;
+  padding-bottom: 62px;
   display: table;
 }
 
@@ -99,14 +105,41 @@ html, body {
   background-color: green;
 }
 
+@media screen and (min-width: 768px) {
+  .transition {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  .navbar.transparent {
+    background: transparent;
+    border-color: transparent;
+  }
+}
+
 // bootstrap fixes
 .navbar-fixed-top {
   border-width: 1px 1px 1px 1px;
 }
 
-@media screen and (min-width: 768px) {
-  .navigation .navbar {
-    background: transparent;
-    border-color: transparent;
-  }
+.navbar-default {
+  background-color: rgba(62, 63, 58, 0.8);
+  border-color: transparent;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: #93c54b;
 }

@@ -1,4 +1,4 @@
-nav.navbar.navbar-default.navbar-fixed-top
+nav.navbar.navbar-default.navbar-fixed-top.transparent.transition
   .container-fluid
     .navbar-header
       = button_tag class: 'navbar-toggle', 'data-toggle': 'collapse',  'data-target': "#navbar-collapse-1" do
@@ -7,11 +7,11 @@ nav.navbar.navbar-default.navbar-fixed-top
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      = link_to 'Herman Zvonimir Došilović', '#home', class: 'navbar-brand visible-xs-inline-block'
-      = link_to 'Herman Zvonimir Došilović', '#home', class: 'navbar-brand hidden-xs'
+      = link_to 'Welcome', '#home', class: 'scroll navbar-brand visible-xs-inline-block'
+      = link_to 'Welcome', '#home', class: 'scroll navbar-brand hidden-xs'
     .collapse.navbar-collapse#navbar-collapse-1
       ul.nav.navbar-nav.navbar-left
         li.hidden
-          = link_to 'Home', '#home'
+          = link_to 'Home', '#home', class: 'scroll'
         li
-          = link_to 'Contact', '#contact'
+          = link_to 'Contact', '#contact', class: 'scroll'
