@@ -1,5 +1,7 @@
 module Admin
   class PasswordsController < Devise::PasswordsController
+    layout 'admin'
+
     prepend_before_filter :require_no_authentication, only: [:edit, :update]
 
     # GET /resource/password/new

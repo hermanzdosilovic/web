@@ -1,21 +1,25 @@
 doctype html
+<!-- Almost everything I do is open source. The same goes for this site. -->
+<!-- Go ahead and grab the source here: https://github.com/hermanzdosilovic/web -->
+
 html
   head
-    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
-    title Herman Zvonimir Došilović
+  meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+  title Herman Zvonimir Došilović
 
-    = favicon_link_tag 'favicon.ico'
-    = stylesheet_link_tag    'application', media: 'all'
-    = javascript_include_tag 'application'
+  = favicon_link_tag 'favicon.ico'
+  = stylesheet_link_tag    'application', media: 'all'
+  = javascript_include_tag 'application'
 
-    = stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext'
-    = stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic'
-    = stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  meta{name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}
 
-    meta{name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}
-    = csrf_meta_tags
-  body#home
-    = render 'layouts/navigation'
-    = yield
-    hr
-    = render 'layouts/footer'
+  = csrf_meta_tags
+
+  body
+    .site
+      .navigation
+        = render 'layouts/navigation'
+      .content
+        = yield
+      .footer
+        = render 'layouts/footer'

@@ -1,35 +1,33 @@
-//= require jquery
-//= require jquery_ujs
-//= require bootstrap-sprockets
-//= require modal_controller
+//= require jquery.min
+//= require bootstrap
 //= require weloveiconfonts_rails
-//= require jquery.easing
-//= require clean-blog
-//= norequire get-shit-done
+//= require custom
 
-$(document).ready(function(){
-  $('body').on('click', '.page-scroll a', function(event) {
-      var $anchor = $(this);
-      $('html, body').stop().animate({
-          scrollTop: $($anchor.attr('href')).offset().top
-      }, 1500, 'easeInOutExpo');
-      event.preventDefault();
+$(document).ready(function() {
+  changeMinHeightOnResize(".min-fullscreen", 0);
+
+  var $window = $(window);
+  var $navbar = $(".navbar-default");
+
+  $("a.scroll").click(function() {
+    $('.navbar-collapse').collapse('hide');
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+    }, 500);
+    return false;
   });
-  $('body').on('click', '.navbar-custom',function(e) {
-    if( $(e.target).is('a') ) {
-        $('.navbar-collapse.in').collapse('hide');
+
+  $('body').scrollspy({
+    target: '.navbar-default'
+  });
+
+  $window.scroll(function(event) {
+    if ($window.scrollTop() > 0) {
+      $navbar.removeClass("transparent")
+    } else {
+      $navbar.addClass("transparent");
     }
   });
-  $('body').scrollspy({
-    target: '.navbar-fixed-top'
-  });
-
-  window.onresize = function () {
-    $('.fullscreen').css('height', $(window).height());
-    $('.min-fullscreen').css('min-height', $(window).height());
-  };
-  $('.fullscreen').css('height', $(window).height());
-  $('.min-fullscreen').css('min-height', $(window).height());
 
   $('body').on('click', '#mail', function() {
     $(this).attr('href', 'mailto:hermanz.dosilovic@gmail.com');

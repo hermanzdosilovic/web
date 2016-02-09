@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: { registrations: 'admin/registrations', passwords: 'admin/passwords' }
+  devise_for :users, controllers: {
+    registrations: 'admin/registrations',
+    passwords: 'admin/passwords',
+    sessions: 'admin/sessions',
+    invitations: 'admin/invitations'
+  }
 
   root 'home#index'
 

@@ -1,0 +1,30 @@
+.random-wallpaper {
+  background-image: url('http://wallpaper.hermanzdosilovic.me');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.cover.black{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cover.blue{
+  background-color: rgba(5, 31, 60, 0.7);
+}
+
+.cover.green{
+  background-color: rgba(3, 28, 7, 0.7);
+}
+
+.cover.orange{
+  background-color: rgba(37, 28, 5, 0.7);
+}
+
+.cover.red{
+  background-color: rgba(35, 3, 2, 0.7);
+}
