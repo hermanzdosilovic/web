@@ -28,6 +28,8 @@ html, body {
 }
 
 .greeting .container {
+  position: fixed;
+  width: 100%;
   text-align: center;
 }
 
@@ -62,6 +64,7 @@ html, body {
 }
 
 .contact {
+  position: relative;
   background-color: #fbfbfb;
 }
 
@@ -92,6 +95,7 @@ html, body {
 }
 
 #green {
+  height: 400px;
   background-color: green;
 }
 
