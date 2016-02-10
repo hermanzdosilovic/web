@@ -7,7 +7,10 @@
 }
 
 .greeting .container {
-  @media screen and (min-width: 530px) and (min-height: 500px) {
+  @media screen and (min-width: 914px) and (min-height: 650px) {
+    position: fixed;
+  }
+  @media screen and (min-width: 600px) and (min-height: 735px) {
     position: fixed;
   }
   width: 100%;
@@ -20,6 +23,7 @@
   min-width: inherit;
   height: inherit;
   min-height: inherit;
+  position: relative;
 }
 
 .greeting .container img#me {
@@ -45,8 +49,35 @@
   color: white;
 }
 
+.greeting .container .weloveiconfonts__item {
+  @media screen and (min-width: 914px) and (min-height: 650px) {
+    display: inline-block;
+  }
+  @media screen and (min-width: 600px) and (min-height: 735px) {
+    display: inline-block;
+  }
+  display: none;
+}
+
+.greeting .container .weloveiconfonts__item > a:link,
+.greeting .container .weloveiconfonts__item > a:visited,
+.greeting .container .weloveiconfonts__item > a:hover,
+.greeting .container .weloveiconfonts__item > a:active {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.greeting .container .weloveiconfonts__item > a:hover,
+.greeting .container .weloveiconfonts__item > a:active {
+  color: rgba(147, 197, 75, 1) !important;
+  // color: #93c54b !important;
+}
+
 .contact {
-  @media screen and (min-width: 530px) and (min-height: 500px) {
+  @media screen and (min-width: 914px) and (min-height: 650px) {
+    position: relative;
+  }
+  @media screen and (min-width: 600px) and (min-height: 735px) {
     position: relative;
   }
   background-color: #f4f8fb; // fbfbfb
@@ -110,5 +141,13 @@
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   background-color: transparent;
-  color: #93c54b;
+  color: rgb(147, 197, 75);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active, {
+  text-decoration: none;
+  color: rgb(147, 197, 75);
 }
