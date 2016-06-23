@@ -5,7 +5,7 @@
 
 $(document).ready(function() {
   changeMinHeightOnResize(".greeting", 0);
-  changeMinHeightOnResize(".contact", 62);
+  changeMinHeightOnResize(".contact", 0);
 
   var $window = $(window);
   var $navbar = $(".navbar-default");
